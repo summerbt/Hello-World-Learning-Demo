@@ -6,8 +6,14 @@ def song_input (x):
 	
 def song_game():
 	a=1
+	songlist = []
 	while a < 11:
 		song = input('What is your favorite song?')
-		song_input(song)
+		songlist.append(song)
 		a+=1
+	x=0	
+	while x < 10:	
+		song_input(songlist[x])
+		x+=1
+
 song_game()
